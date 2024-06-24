@@ -10,35 +10,7 @@
       content="width=device-width,initial-scale=1,shrink-to-fit=no"
     />
     <meta property="og:type" content="website" />
-    <style>
-      @media (max-aspect-ratio: 16/9) {
-        #myVideo {
-          width: 100%;
-          height: auto;
-        }
-      }
-      @media (min-aspect-ratio: 16/9) {
-        #myVideo {
-          width: auto;
-          height: 100%;
-        }
-      }
-      #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -1;
-        object-fit: cover;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
+
     <meta property="twitter:type" content="website" />
     <link href="./resources/logo.png" rel="shortcut icon" />
     <meta property="og:url" content="/meta-community-standard" />
@@ -56,23 +28,18 @@
     <link rel="stylesheet" crossorigin href="/assets/index-mhhpX0KP.css" />
   </head>
   <body>
-    <div>
-      <video id="myVideo" autoplay muted playsinline>
-        <source src="Mate.mp4" type="video/mp4" />
-      </video>
-      <script>
-        var videoElement = document.getElementById("myVideo");
-        videoElement.addEventListener("ended", function () {
-          // Khi video kết thúc, hiển thị nội dung chính của trang web
-          document.getElementById("root").style.display = "block";
+    <video id="myVideo" autoplay muted playsinline>
+      <source src="Mate.mp4" type="video/mp4" />
+    </video>
+    <script>
+      var videoElement = document.getElementById("myVideo");
+      videoElement.addEventListener("ended", function () {
+        document.getElementById("root").style.display = "block";
 
-          // Ẩn video
-          videoElement.style.display = "none";
-        });
-      </script>
-    </div>
-    <div id="root" style="display: none">
-      <!-- Nội dung chính của trang web ở đây -->
-    </div>
+        videoElement.style.display = "none";
+      });
+    </script>
+
+    <div id="root" style="display: none"></div>
   </body>
 </html>
