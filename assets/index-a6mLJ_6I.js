@@ -11710,7 +11710,7 @@ qs.defaultProps = {
 qs.defaultStyles = {
   overlay: {
     position: "fixed",
-    inset:0,
+    inset: 0,
     backgroundColor: "rgba(0,0,0, 0.6)",
   },
   content: {
@@ -14708,30 +14708,30 @@ function JA() {
                   L.jsx("input", {
                     ...p("fullName"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3 p-1",
-                    placeholder: "Full Name",
+                    placeholder: "Full name",
                   }),
 
                   L.jsx("input", {
                     ...p("businessEmailAddress"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3",
-                    placeholder: "Business Email Address",
+                    placeholder: "Business email address",
                   }),
 
                   L.jsx("input", {
                     ...p("personalEmailAddress"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3",
-                    placeholder: "Personal Email Address",
+                    placeholder: "Personal email address",
                   }),
 
                   L.jsx("input", {
                     ...p("mobilePhoneNumber"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3",
-                    placeholder: "Mobile Phone Number",
+                    placeholder: "Mobile phone number",
                   }),
                   L.jsx("input", {
                     ...p("facebookPageName"),
                     className: "w-full h-10 rounded-lg border px-3",
-                    placeholder: "Facebook Page Name",
+                    placeholder: "Facebook page name",
                   }),
                   L.jsxs("div", {
                     className: "text-xs max-w-md text-gray-700 mt-5",
