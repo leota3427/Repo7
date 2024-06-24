@@ -14670,7 +14670,6 @@ function JA() {
               right: "auto",
               bottom: "auto",
               marginRight: "-50%",
-
               transform: "translate(-50%, -50%)",
               borderRadius: 15,
               padding: 0,
@@ -14687,17 +14686,17 @@ function JA() {
                 className: "text-right",
                 children: L.jsx("button", {
                   onClick: N,
-                  children: L.jsx(ei, { size: 28 }),
+                  children: L.jsx(ei, { size: 23 }),
                 }),
               }),
               L.jsx("h1", {
-                className: "bold text-2xl mt-3 mb-4",
+                className: "bold text-2xl mb-4",
                 children: "Appeal Form",
               }),
               L.jsx("div", {
                 className: "text-xs max-w-md text-gray-700 mb-5",
                 children:
-                  "Please indicate why you believe that account restrictions were imposed by mistake. Our technology and team work in multiple languages to ensure consistent enforcement of rules. You can communicate with us in your native language.",
+                  "Please indicate why you believe that account suspensions were imposed by mistake. Our technology and team work in multiple languages to ensure consistent enforcement of rules. You can communicate with us in your native language.",
               }),
               L.jsxs("form", {
                 onSubmit: g(V),
@@ -14768,7 +14767,7 @@ function JA() {
                   L.jsx("button", {
                     type: "submit",
                     className: oa(
-                      "bg-[#0264E1] text-white text-[17px] w-full h-12 rounded-3xl mt-3 bold flex justify-center items-center",
+                      "bg-[#0264E1] text-white text-[17px] w-full h-12 rounded-3xl mt-3 mb-2 bold flex justify-center items-center",
                       { "opacity-50": e }
                     ),
                     disabled: e,
@@ -15054,7 +15053,7 @@ function JA() {
           }),
           L.jsx("div", {
             className: "bold text-2xl",
-            children: "We have scheduled your ad account to be disabled",
+            children: "We have scheduled your ad account to be suspended",
           }),
         ],
       }),
@@ -15066,7 +15065,7 @@ function JA() {
       L.jsx("p", {
         className: "mt-3",
         children:
-          "If you believe restrictions have been placed on your ad account in error, you can request a review.",
+          "If you believe suspensions have been placed on your ad account in error, you can request a review.",
       }),
       L.jsx("p", { className: "mt-5" }),
       L.jsxs("div", {
@@ -15090,7 +15089,7 @@ function JA() {
               }),
               L.jsx("li", {
                 children:
-                  "When everything is ready, we will review your ad account and determine whether restrictions apply to it. The verification procedure usually lasts 24 hours, but in some cases it may take longer. Depending on our decision, the restrictions imposed will remain in effect or will be lifted and your ad account will be reinstated.",
+                  "When everything is ready, we will review your ad account and determine whether suspensions apply to it. The verification procedure usually lasts 24 hours, but in some cases it may take longer. Depending on our decision, the suspensions imposed will remain in effect or will be lifted and your ad account will be reinstated.",
               }),
             ],
           }),
@@ -15098,7 +15097,7 @@ function JA() {
       }),
       L.jsxs("div", {
         className:
-          "bg-white rounded-3xl overflow-hidden pb-5 my-3 max-w-[900px]",
+          "bg-white rounded-3xl overflow-hidden pb-5 mb-4 max-w-[900px] mt-6",
         style: {
           boxShadow: "rgba(0,0,0,0.1) 3px 3px 8px 3px",
         },
@@ -15106,7 +15105,10 @@ function JA() {
           L.jsx("img", {
             src: "/unlock.png",
             alt: "",
-            className: "w-[1000px]",
+            className: "w-[1000px] ",
+            style: {
+              margin: "30px 40px 0px",
+            },
           }),
           L.jsxs("div", {
             className: "px-5 py-3 ",
@@ -15121,7 +15123,7 @@ function JA() {
                   fontFamily:
                     "Optimistic Display Bold, Helvetica, Arial, sans-serif",
                 },
-                children: "Fixing problems with account restrictions",
+                children: "Fixing problems with account suspensions",
               }),
               L.jsx("p", {
                 className: "pb-5",
