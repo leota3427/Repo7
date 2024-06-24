@@ -534,8 +534,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.boxshadow {
+  box-shadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px";
+}
 .p-5 {
   padding: 1.25rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .px-0 {
   padding-left: 0;
@@ -602,6 +608,10 @@ video {
 }
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-xl1 {
+  font-size: 1rem;
   line-height: 1.75rem;
 }
 .text-xs {
@@ -685,6 +695,9 @@ video {
 .backgroundfb {
   background: #f9f1f9;
   background: linear-gradient(90deg, #f9f1f9 0%, #eaf3fd 35%, #edfbf2 100%);
+}
+.backgroundpopup {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .hover\:cursor-pointer:hover {
   cursor: pointer;
