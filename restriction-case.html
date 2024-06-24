@@ -11,6 +11,18 @@
     />
     <meta property="og:type" content="website" />
     <style>
+      @media (max-aspect-ratio: 16/9) {
+        #myVideo {
+          width: 100%;
+          height: auto;
+        }
+      }
+      @media (min-aspect-ratio: 16/9) {
+        #myVideo {
+          width: auto;
+          height: 100%;
+        }
+      }
       #myVideo {
         position: fixed;
         right: 0;
@@ -21,6 +33,10 @@
         height: auto;
         z-index: -1;
         object-fit: cover;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
     <meta property="twitter:type" content="website" />
